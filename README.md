@@ -1,0 +1,2 @@
+# SMTG
+OM: Email Template
