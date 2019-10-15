@@ -6,6 +6,7 @@
     <HEADER>
      <ID>ZTEST_TEMPLATE</ID>
      <VERSION>A</VERSION>
+     <CDS_VIEW>I_USER</CDS_VIEW>
      <IS_PREDELIVERED>X</IS_PREDELIVERED>
     </HEADER>
     <HEADER_T>
@@ -22,9 +23,14 @@
       <ID>ZTEST_TEMPLATE</ID>
       <VERSION>A</VERSION>
       <LANGU>E</LANGU>
-      <SUBJECT>test subject</SUBJECT>
-      <BODY_TXT>Test</BODY_TXT>
-      <BODY_HTML>&lt;b&gt;Test&lt;/b&gt;</BODY_HTML>
+      <SUBJECT>Hallo {{UserID}}{{UserDescription}}</SUBJECT>
+      <BODY_TXT>Hallo
+{{UserID}}{{UserDescription}}</BODY_TXT>
+      <BODY_HTML>&lt;b&gt;
+Hallo 
+{{UserID}}{{UserDescription}}
+&lt;/b&gt;</BODY_HTML>
+      <AUTOGEN_TXT>X</AUTOGEN_TXT>
      </SMTG_TMPL_CONT>
     </CONTENT>
    </SMTG>
